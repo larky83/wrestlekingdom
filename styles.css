@@ -1,0 +1,74 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';}
+
+#nav {
+    background-color: black;
+    text-align: center;
+    border: white 1px solid;
+    line-height: 34px;
+    z-index: 2;
+    position: fixed;
+    width: 99%;}
+
+#nav img {
+    float:left;
+    height: 35px;
+}    
+
+#nav a {
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;}
+
+.year {
+    text-decoration: underline;}
+
+
+.card {
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 400px 800px;
+    grid-template-rows: auto;
+    grid-template-areas:'left' 'right';}
+
+h2, h3 {
+    text-align: center;
+    font-weight: bold;}
+
+.left {
+    text-align: center;
+    }
+
+.right {
+    text-align: center;}
+
+.main {
+    text-transform: uppercase;}
+
+.champ {
+    color: gold;}
+
+.pre {
+    font-size: 0.75rem;}
+
+@media only screen and (max-width: 480px) {
+    .html {
+        font-size: 8px;
+    }
+
+    .card {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        grid-template-areas:'left' 'right';
+    }
+
+    .left img {
+        height: 200px;
+        width: auto;
+    }
+}
